@@ -1,0 +1,155 @@
+.about {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.about__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  row-gap: 150px;
+}
+
+.about__item {
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.about__image {
+  background-color: #FAE9E0;
+  margin: 0 -20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    margin: 0 -30px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0;
+    padding: 0;
+    align-items: end;
+    width: 380px;
+    min-height: 287px;
+  }
+
+  & > svg {
+    margin-top: -30px;
+
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      position: absolute;
+      left: 30px;
+      bottom: -30px;
+
+      & path {
+        stroke: #AF9283;
+      }
+    }
+  }
+
+  &--paper {
+    background-color: #E3EBE7;
+    min-height: 287px;
+    height:  287px;
+
+    @media (min-width: 1024px) {
+      order: 1;
+      width: 410px;
+      height: 276px;
+      min-height: 276px;
+    }
+
+    & > svg {
+      margin-top: -20px;
+
+      @media (min-width: 1024px) {
+        position: absolute;
+        left: 70px;
+        top: -30px;
+        margin-top: 0;
+
+        & path {
+          stroke: #444A4A;
+        }
+      }
+    }
+
+  }
+}
+
+.about__box {
+
+  @media (min-width: 1024px) {
+    max-width: 450px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 645px;
+  }
+}
+
+.about__slogan {
+  display: none;
+
+  @media (min-width: 1024px) {
+    font-family: $second-font;
+    display: block;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    left: -10px;
+    top: -30px;
+
+    &--paper {
+      right: -15px;
+      left: inherit;
+    }
+  }
+}
+
+.about__subtitle {
+  margin-bottom: 30px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 25px;
+  }
+}
+
+.about__text {
+  font-family: $third-font;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 36px;
+  letter-spacing: 0.001em;
+  color: #444A4A;
+
+  & > span:not(:last-child) {
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    & > span:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.about__button {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    min-width: 235px;
+    width: 235px;
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,12 @@
+.slogan {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 36px;
+  color: rgb(0, 0, 0, 0.75);
+  font-family: $second-font;
+
+  @media (min-width: 1024px) {
+    font-size: 28px;
+    line-height: 53px;
+  }
+}

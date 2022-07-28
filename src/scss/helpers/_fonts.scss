@@ -1,0 +1,20 @@
+@font-face {
+  @include includeFont(700, $first-font, "JosefinSans-Bold");
+}
+
+@font-face {
+  @include includeFont(400, $first-font, "JosefinSans-Regular");
+}
+
+@font-face {
+  @include includeFont(400, $second-font, "Cedarville-Cursive");
+}
+
+@font-face {
+  @include includeFont(400, $third-font, "AlegreyaSans-Regular");
+}
+
+@font-face {
+  @include includeFont(400, $fourth-font, "George-Regular");
+}
+

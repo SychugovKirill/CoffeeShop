@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+
+    &--other {
+      max-width: inherit;
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 980px;
+
+    &--rp {
+      padding-right: 70px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1240px;
+
+    &--rp {
+      padding-right: 90px;
+    }
+  }
+}

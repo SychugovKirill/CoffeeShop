@@ -1,0 +1,91 @@
+.menu {
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    background-color: rgb(45, 99, 94, 0.05);
+  }
+}
+
+.menu__wrap {
+  padding: 20px 20px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: 768px) {
+    max-width: 750px;
+    padding: 20px 0;
+  }
+
+  @media (min-width: 1280px) {
+      max-width: 1120px;
+  }
+}
+
+.menu__list {
+  @include list-reset;
+}
+
+.menu-slider {
+  overflow: visible;
+  padding: 30px 0;
+
+  @media (min-width: 768px) {
+    overflow: hidden;
+    padding: 30px 20px;
+    max-width: 750px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1120px;
+  }
+}
+
+.menu__btn-box {
+  display: flex;
+  align-items: center;
+
+}
+
+.menu__button {
+  display: none;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+
+  &--prev {
+    left: -30px;
+
+    & > svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--next {
+    right: -30px;
+  }
+}
+
+.menu__slide {
+  height: initial;
+
+  @media (min-width: 768px) {
+    width: 340px;
+  }
+}
+
+.menu__pagination {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}

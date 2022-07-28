@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  @include list-reset;
+  row-gap: 10px;
+  column-gap: 27px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &--nav {
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+.social__item {
+  width: 45px;
+  height: 45px;
+  line-height: 0;
+}
